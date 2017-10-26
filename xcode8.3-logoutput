@@ -1,22 +1,20 @@
 travis_fold:start:worker_info
 [0K[33;1mWorker information[0m
-hostname: 8b2412d1-b07d-4ab5-8f6f-3f40281bd75f@15948.wjb-1.macstadium-us-se-1.travisci.net
+hostname: 582f914e-6f57-4b83-98d4-2c044bb0cedc@10808.wjb-2
 version: v3.1.0 https://github.com/travis-ci/worker/tree/5b106cb773802277034d07b0a865af58d67bb1d2
-instance: 9cad0b9c-ef05-4b86-b607-ea3a5553722e:travis-ci-macos10.12-xcode8.3-1496700148 (via amqp)
-startup: 2m55.248241195s
+instance: e43e86bd-5abb-48d4-bc35-364d15c42e29:travis-ci-macos10.12-xcode8.3-1507738863 (via amqp)
+startup: 3m45.922606782s
 travis_fold:end:worker_info
-[0K/Users/travis/.nvm/nvm.sh: line 2568: echo: write error: Broken pipe
-
-travis_fold:start:system_info
+[0Ktravis_fold:start:system_info
 [0K[33;1mBuild system information[0m
 
 Build language: objective-c
 
-Build id: 637792
+Build id: 637796
 
-Job id: 637793
+Job id: 637797
 
-Runtime kernel version: 16.6.0
+Runtime kernel version: 16.7.0
 
 travis-build version: a8bb91dae
 
@@ -29,76 +27,70 @@ Unable to delete certificate matching "0950B6CD3D2F37EA246A1AAA20DFAADBD6FE1F75"
 
 $ rvm use
 
-Warning! PATH is not properly set up, '/Users/travis/.rvm/gems/ruby-2.4.1/bin' is not at first place,
-
-         usually this is caused by shell initialization files - check them for 'PATH=...' entries,
-
-         it might also help to re-add RVM to your dotfiles: 'rvm get stable --auto-dotfiles',
-
-         to fix temporarily in this shell session run: 'rvm use ruby-2.4.1'.
-
-[32mUsing /Users/travis/.rvm/gems/ruby-2.4.1[0m
+[32mUsing /Users/travis/.rvm/gems/ruby-2.4.2[0m
 
 travis_fold:start:git.checkout
-[0Ktravis_time:start:03ceb352
+[0Ktravis_time:start:2d3c328e
 [0K$ git clone --depth=50 --branch=xcode-8.3test https://github.com/Lyoness/travis_staging_test.git Lyoness/travis_staging_test
 
 Cloning into 'Lyoness/travis_staging_test'...
 
-remote: Counting objects: 23, done.[K
+remote: Counting objects: 24, done.[K
 
-remote: Compressing objects:   5% (1/17)   [K
-remote: Compressing objects:  11% (2/17)   [K
-remote: Compressing objects:  17% (3/17)   [K
-remote: Compressing objects:  23% (4/17)   [K
-remote: Compressing objects:  29% (5/17)   [K
-remote: Compressing objects:  35% (6/17)   [K
-remote: Compressing objects:  41% (7/17)   [K
-remote: Compressing objects:  47% (8/17)   [K
-remote: Compressing objects:  52% (9/17)   [K
-remote: Compressing objects:  58% (10/17)   [K
-remote: Compressing objects:  64% (11/17)   [K
-remote: Compressing objects:  70% (12/17)   [K
-remote: Compressing objects:  76% (13/17)   [K
-remote: Compressing objects:  82% (14/17)   [K
-remote: Compressing objects:  88% (15/17)   [K
-remote: Compressing objects:  94% (16/17)   [K
-remote: Compressing objects: 100% (17/17)   [K
-remote: Compressing objects: 100% (17/17), done.[K
+remote: Compressing objects:   5% (1/18)   [K
+remote: Compressing objects:  11% (2/18)   [K
+remote: Compressing objects:  16% (3/18)   [K
+remote: Compressing objects:  22% (4/18)   [K
+remote: Compressing objects:  27% (5/18)   [K
+remote: Compressing objects:  33% (6/18)   [K
+remote: Compressing objects:  38% (7/18)   [K
+remote: Compressing objects:  44% (8/18)   [K
+remote: Compressing objects:  50% (9/18)   [K
+remote: Compressing objects:  55% (10/18)   [K
+remote: Compressing objects:  61% (11/18)   [K
+remote: Compressing objects:  66% (12/18)   [K
+remote: Compressing objects:  72% (13/18)   [K
+remote: Compressing objects:  77% (14/18)   [K
+remote: Compressing objects:  83% (15/18)   [K
+remote: Compressing objects:  88% (16/18)   [K
+remote: Compressing objects:  94% (17/18)   [K
+remote: Compressing objects: 100% (18/18)   [K
+remote: Compressing objects: 100% (18/18), done.[K
 
-remote: Total 23 (delta 6), reused 21 (delta 4), pack-reused 0[K
+remote: Total 24 (delta 7), reused 21 (delta 4), pack-reused 0[K
 
-Unpacking objects:   4% (1/23)   
-Unpacking objects:   8% (2/23)   
-Unpacking objects:  13% (3/23)   
-Unpacking objects:  17% (4/23)   
-Unpacking objects:  21% (5/23)   
-Unpacking objects:  26% (6/23)   
-Unpacking objects:  30% (7/23)   
-Unpacking objects:  34% (8/23)   
-Unpacking objects:  39% (9/23)   
-Unpacking objects:  43% (10/23)   
-Unpacking objects:  47% (11/23)   
-Unpacking objects:  52% (12/23)   
-Unpacking objects:  56% (13/23)   
-Unpacking objects:  60% (14/23)   
-Unpacking objects:  65% (15/23)   
-Unpacking objects:  69% (16/23)   
-Unpacking objects:  73% (17/23)   
-Unpacking objects:  78% (18/23)   
-Unpacking objects:  82% (19/23)   
-Unpacking objects:  86% (20/23)   
-Unpacking objects:  91% (21/23)   
-Unpacking objects:  95% (22/23)   
-Unpacking objects: 100% (23/23)   
-Unpacking objects: 100% (23/23), done.
+Unpacking objects:   4% (1/24)   
+Unpacking objects:   8% (2/24)   
+Unpacking objects:  12% (3/24)   
+Unpacking objects:  16% (4/24)   
+Unpacking objects:  20% (5/24)   
+Unpacking objects:  25% (6/24)   
+Unpacking objects:  29% (7/24)   
+Unpacking objects:  33% (8/24)   
+Unpacking objects:  37% (9/24)   
+Unpacking objects:  41% (10/24)   
+Unpacking objects:  45% (11/24)   
+Unpacking objects:  50% (12/24)   
+Unpacking objects:  54% (13/24)   
+Unpacking objects:  58% (14/24)   
+Unpacking objects:  62% (15/24)   
+Unpacking objects:  66% (16/24)   
+Unpacking objects:  70% (17/24)   
+Unpacking objects:  75% (18/24)   
+Unpacking objects:  79% (19/24)   
+Unpacking objects:  83% (20/24)   
+Unpacking objects:  87% (21/24)   
+Unpacking objects:  91% (22/24)   
+Unpacking objects:  95% (23/24)   
+Unpacking objects: 100% (24/24)   
+Unpacking objects: 100% (24/24), done.
 
 
 
-travis_time:end:03ceb352:start=1508957734361564000,finish=1508957736536061000,duration=2174497000
+travis_time:end:2d3c328e:start=1508959010686631000,finish=1508959012061629000,duration=1374998000
 [0K$ cd Lyoness/travis_staging_test
 
-$ git checkout -qf aaf2cca62c77111d18f9a01f6db07d4a6599e934
+$ git checkout -qf 29856fba4bdd09d23089e26cd7221a3915b29eff
 
 travis_fold:end:git.checkout
 [0K[33;1mDisabling Homebrew auto update. If your Homebrew package requires Homebrew DB be up to date, please run `brew update` explicitly.[0m
@@ -106,193 +98,18 @@ travis_fold:end:git.checkout
 $ export HOMEBREW_NO_AUTO_UPDATE=1
 
 travis_fold:start:rvm
-[0Ktravis_time:start:046e2dd8
+[0Ktravis_time:start:033af7ae
 [0K$ rvm use default
 
-[32mUsing /Users/travis/.rvm/gems/ruby-2.4.1[0m
+[32mUsing /Users/travis/.rvm/gems/ruby-2.4.2[0m
 
 
 
-** Updating RubyGems to the latest version for security reasons. **
-
-** If you need an older version, you can downgrade with 'gem update --system OLD_VERSION'. **
-
-
-
-Updating rubygems-update
-
-Fetching: rubygems-update-2.6.14.gem
-Fetching: rubygems-update-2.6.14.gem (  1%)
-Fetching: rubygems-update-2.6.14.gem (  2%)
-Fetching: rubygems-update-2.6.14.gem (  3%)
-Fetching: rubygems-update-2.6.14.gem (  4%)
-Fetching: rubygems-update-2.6.14.gem (  5%)
-Fetching: rubygems-update-2.6.14.gem (  7%)
-Fetching: rubygems-update-2.6.14.gem (  9%)
-Fetching: rubygems-update-2.6.14.gem ( 11%)
-Fetching: rubygems-update-2.6.14.gem ( 13%)
-Fetching: rubygems-update-2.6.14.gem ( 15%)
-Fetching: rubygems-update-2.6.14.gem ( 18%)
-Fetching: rubygems-update-2.6.14.gem ( 20%)
-Fetching: rubygems-update-2.6.14.gem ( 22%)
-Fetching: rubygems-update-2.6.14.gem ( 24%)
-Fetching: rubygems-update-2.6.14.gem ( 26%)
-Fetching: rubygems-update-2.6.14.gem ( 28%)
-Fetching: rubygems-update-2.6.14.gem ( 30%)
-Fetching: rubygems-update-2.6.14.gem ( 33%)
-Fetching: rubygems-update-2.6.14.gem ( 35%)
-Fetching: rubygems-update-2.6.14.gem ( 37%)
-Fetching: rubygems-update-2.6.14.gem ( 39%)
-Fetching: rubygems-update-2.6.14.gem ( 41%)
-Fetching: rubygems-update-2.6.14.gem ( 43%)
-Fetching: rubygems-update-2.6.14.gem ( 45%)
-Fetching: rubygems-update-2.6.14.gem ( 48%)
-Fetching: rubygems-update-2.6.14.gem ( 50%)
-Fetching: rubygems-update-2.6.14.gem ( 52%)
-Fetching: rubygems-update-2.6.14.gem ( 54%)
-Fetching: rubygems-update-2.6.14.gem ( 56%)
-Fetching: rubygems-update-2.6.14.gem ( 58%)
-Fetching: rubygems-update-2.6.14.gem ( 60%)
-Fetching: rubygems-update-2.6.14.gem ( 63%)
-Fetching: rubygems-update-2.6.14.gem ( 65%)
-Fetching: rubygems-update-2.6.14.gem ( 67%)
-Fetching: rubygems-update-2.6.14.gem ( 69%)
-Fetching: rubygems-update-2.6.14.gem ( 71%)
-Fetching: rubygems-update-2.6.14.gem ( 73%)
-Fetching: rubygems-update-2.6.14.gem ( 75%)
-Fetching: rubygems-update-2.6.14.gem ( 78%)
-Fetching: rubygems-update-2.6.14.gem ( 80%)
-Fetching: rubygems-update-2.6.14.gem ( 82%)
-Fetching: rubygems-update-2.6.14.gem ( 84%)
-Fetching: rubygems-update-2.6.14.gem ( 86%)
-Fetching: rubygems-update-2.6.14.gem ( 88%)
-Fetching: rubygems-update-2.6.14.gem ( 90%)
-Fetching: rubygems-update-2.6.14.gem ( 93%)
-Fetching: rubygems-update-2.6.14.gem ( 95%)
-Fetching: rubygems-update-2.6.14.gem ( 97%)
-Fetching: rubygems-update-2.6.14.gem ( 99%)
-Fetching: rubygems-update-2.6.14.gem (100%)
-Fetching: rubygems-update-2.6.14.gem (100%)
-
-Successfully installed rubygems-update-2.6.14
-
-Installing RubyGems 2.6.14
-
-RubyGems 2.6.14 installed
-
-
-
-=== 2.6.14 / 2017-10-09
-
-
-
-Security fixes:
-
-
-
-* Whitelist classes and symbols that are in loaded YAML.
-
-  See CVE-2017-0903 for full details.
-
-  Fix by Aaron Patterson.
-
-
-
-=== 2.6.13 / 2017-08-27
-
-
-
-Security fixes:
-
-
-
-* Fix a DNS request hijacking vulnerability.
-
-  Fix by Samuel Giddins.
-
-* Fix an ANSI escape sequence vulnerability.
-
-  Fix by Evan Phoenix.
-
-* Fix a DOS vulernerability in the `query` command.
-
-  Fix by Samuel Giddins.
-
-* Fix a vulnerability in the gem installer that allowed
-
-  a malicious gem to overwrite arbitrary files.
-
-  Fix by Samuel Giddins.
-
-
-
-=== 2.6.12 / 2017-04-30
-
-
-
-Bug fixes:
-
-
-
-* Fix test_self_find_files_with_gemfile to sort expected files. Pull
-
-  request #1880 by Kazuaki Matsuo.
-
-* Fix issue for MinGW / MSYS2 builds and testing. Pull request #1879 by
-
-  MSP-Greg.
-
-* Fix gem open to open highest version number rather than lowest. Pull
-
-  request #1877 by Tim Pope.
-
-* Add a test for requiring a default spec as installed by the ruby
-
-  installer. Pull request #1899 by Samuel Giddins.
-
-* Fix broken --exact parameter to gem command. Pull request #1873 by Jason
-
-  Frey.
-
-* [Installer] Generate backwards-compatible binstubs. Pull request #1904
-
-  by Samuel Giddins.
-
-* Fix pre-existing source recognition on add action. Pull request #1883 by
-
-  Jonathan Claudius.
-
-* Prevent negative IDs in output of #inspect. Pull request #1908 by VÃ­t
-
-  Ondruch.
-
-* Allow Gem.finish_resolve to respect already-activated specs. Pull
-
-  request #1910 by Samuel Giddins.
-
-
-
-
-
-------------------------------------------------------------------------------
-
-
-
-RubyGems installed the following executables:
-
-	/Users/travis/.rvm/rubies/ruby-2.4.1/bin/gem
-
-
-
-RubyGems system software updated
-
-
-
-travis_time:end:046e2dd8:start=1508957736682439000,finish=1508957747452516000,duration=10770077000
+travis_time:end:033af7ae:start=1508959012193260000,finish=1508959013671008000,duration=1477748000
 [0Ktravis_fold:end:rvm
 [0K$ ruby --version
 
-ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
+ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
 
 $ rvm --version
 
@@ -300,7 +117,7 @@ rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <m
 
 $ bundle --version
 
-Bundler version 1.15.1
+Bundler version 1.15.4
 
 travis_fold:start:announce
 [0K$ xcodebuild -version -sdk
@@ -453,7 +270,7 @@ Build version 8E3004b
 
 $ xctool -version
 
-0.3.1
+0.3.3
 
 $ xcrun simctl list
 
@@ -923,58 +740,58 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
 
 == Device Pairs ==
 
-1D8AE0DF-364A-4866-95A3-5D4551DAD111 (active, disconnected)
+818663A0-BB49-4DE5-A8CA-9F3CA5EAAC56 (active, disconnected)
 
     Watch: Apple Watch - 38mm (31C5B5D0-82A9-4A44-ABC6-29A7C5FA8993) (Shutdown)
 
     Phone: iPhone 6s (AB104968-7058-4AE2-A95D-DBB77634C642) (Shutdown)
 
-7C233D46-F281-4A3A-BEB9-E3EA249B70DD (active, disconnected)
+5948BA7B-E682-4D64-8AAD-87F595006A3A (active, disconnected)
 
     Watch: Apple Watch - 42mm (7A7CFDC6-7BF8-4005-82AC-01966D4A20EA) (Shutdown)
 
     Phone: iPhone 6s Plus (482F5B24-39BD-44E0-A525-8AA39234DA28) (Shutdown)
 
-B6D3F44C-EFD5-4631-8402-46C9C71D700E (active, disconnected)
+8A537A03-0AC6-4D85-975B-93FF5A3949FD (active, disconnected)
 
     Watch: Apple Watch Series 2 - 38mm (D68695DB-C79B-4D82-A2BE-D54453151884) (Shutdown)
 
     Phone: iPhone 7 (ABBD7191-486B-462F-80B4-AE08C5820DA1) (Shutdown)
 
-586396A0-C265-4E9A-8643-B66BE1EFAA26 (active, disconnected)
+7A9271EE-826F-4DD4-AD0E-32321EE91FC5 (active, disconnected)
 
     Watch: Apple Watch Series 2 - 42mm (96AFA589-B3DD-475D-8B6D-053CE3FFEE2F) (Shutdown)
 
     Phone: iPhone 7 Plus (F60B87EC-8969-41A7-90ED-D0826ECC32DB) (Shutdown)
 
 travis_fold:end:announce
-[0Ktravis_time:start:112084e5
+[0Ktravis_time:start:1ca87d6d
 [0K$ uname -a
 
-Darwin Traviss-Mac-397.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+Darwin Traviss-Mac-415.local 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
 
 
 
-travis_time:end:112084e5:start=1508957755585391000,finish=1508957755633469000,duration=48078000
+travis_time:end:1ca87d6d:start=1508959024409340000,finish=1508959024428641000,duration=19301000
 [0K
 
 [32;1mThe command "uname -a" exited with 0.[0m
 
-travis_time:start:04285a94
+travis_time:start:06d85f24
 [0K$ df -h /
 
 Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on
 
-/dev/disk0s2  149Gi  107Gi   42Gi    72% 2622316 4292344963    0%   /
+/dev/disk0s2  149Gi  108Gi   41Gi    73% 2676525 4292290754    0%   /
 
 
 
-travis_time:end:04285a94:start=1508957755663095000,finish=1508957755705927000,duration=42832000
+travis_time:end:06d85f24:start=1508959024442249000,finish=1508959024474590000,duration=32341000
 [0K
 
 [32;1mThe command "df -h /" exited with 0.[0m
 
-travis_time:start:0ce5f68f
+travis_time:start:1226385c
 [0K$ xcodebuild -version
 
 Xcode 8.3.3
@@ -983,61 +800,61 @@ Build version 8E3004b
 
 
 
-travis_time:end:0ce5f68f:start=1508957755751786000,finish=1508957756150862000,duration=399076000
+travis_time:end:1226385c:start=1508959024487381000,finish=1508959024608790000,duration=121409000
 [0K
 
 [32;1mThe command "xcodebuild -version" exited with 0.[0m
 
-travis_time:start:012d2c5a
+travis_time:start:211b4105
 [0K$ brew list --versions
 
 adns 1.5.1
 
 autoconf 2.69
 
-automake 1.15
+automake 1.15.1
 
-boost 1.64.0_1
+boost 1.65.1
 
-carthage 0.23.0
+carthage 0.26.0
 
-cgal 4.9.1
+cgal 4.11
 
-cmake 3.8.2
+cmake 3.9.4
 
-coreutils 8.27
+coreutils 8.28_1
 
 dirmngr 1.1.1_3
 
-freexl 1.0.2
+freexl 1.0.4
 
-gdal 1.11.5_2
+gdal 1.11.5_3
 
 gdbm 1.13
 
-geos 3.6.1
+geos 3.6.2
 
 gettext 0.19.8.1
 
 giflib 5.1.4
 
-git 2.13.1
+git 2.14.2
 
 gmp 6.1.2
 
-gnupg 2.1.21
+gnupg 2.2.1
 
-gnutls 3.5.12_2
+gnutls 3.5.15
 
-go 1.8.3
+go 1.9.1
 
 gpg-agent 2.0.30_3
 
-icu4c 58.2
+icu4c 59.1
 
-jpeg 8d
+jpeg 9b
 
-json-c 0.12
+json-c 0.12.1
 
 libassuan 2.4.3_1
 
@@ -1045,9 +862,9 @@ libevent 2.1.8
 
 libffi 3.2.1
 
-libgcrypt 1.7.7
+libgcrypt 1.8.1
 
-libgeotiff 1.4.2
+libgeotiff 1.4.2_1
 
 libgpg-error 1.27
 
@@ -1055,7 +872,7 @@ libksba 1.3.5
 
 liblwgeom 2.1.5_3
 
-libpng 1.6.29
+libpng 1.6.34
 
 libspatialite 4.3.0a_3
 
@@ -1063,7 +880,7 @@ libssh 0.7.5
 
 libtasn1 4.12
 
-libtiff 4.0.8
+libtiff 4.0.8_4
 
 libtool 2.4.6_1
 
@@ -1073,25 +890,25 @@ libusb 1.0.21
 
 libusb-compat 0.1.5_1
 
-libxml2 2.9.4_3
+libxml2 2.9.6
 
 libyaml 0.1.7
 
-lzlib 1.8
+lzlib 1.9
 
 maven 3.5.0
 
 md5deep 4.4
 
-mercurial 4.2.1
+mercurial 4.3.3
 
-mpfr 3.1.5
+mpfr 3.1.6
 
-msgpack 2.1.1
+msgpack 2.1.5
 
 nettle 3.3
 
-node 8.0.0_1
+node 8.6.0
 
 npth 1.5
 
@@ -1099,48 +916,48 @@ openssl 1.0.2l
 
 openssl@1.1 1.1.0f
 
-p11-kit 0.23.7
+p11-kit 0.23.9
 
-pcre 8.40
+pcre 8.41
 
 pinentry 1.0.0
 
 pkg-config 0.29.2
 
-postgis 2.3.2
+postgis 2.4.0
 
-postgresql 9.6.3
+postgresql 9.6.5
 
 proj 4.9.3
 
 pth 2.0.7
 
-pyenv 1.0.10_1
+pyenv 1.1.5
 
-python 2.7.13
+python 2.7.14
 
 readline 7.0.3_1
 
-sfcgal 1.3.1
+sfcgal 1.3.2
 
-sqlite 3.19.2
+sqlite 3.20.1
 
-swiftlint 0.19.0
+swiftlint 0.23.1
 
 tmate 2.2.1_3
 
 wget 1.19.1_1
 
-xctool 0.3.1
+xctool 0.3.3
 
 
 
-travis_time:end:012d2c5a:start=1508957756184382000,finish=1508957761525980000,duration=5341598000
+travis_time:end:211b4105:start=1508959024621877000,finish=1508959032909126000,duration=8287249000
 [0K
 
 [32;1mThe command "brew list --versions" exited with 0.[0m
 
-travis_time:start:17971bc2
+travis_time:start:1efe5f4a
 [0K$ brew cask list --versions
 
 java 1.8.0_112-b16
@@ -1153,24 +970,24 @@ xquartz 2.7.11
 
 
 
-travis_time:end:17971bc2:start=1508957761551619000,finish=1508957763681700000,duration=2130081000
+travis_time:end:1efe5f4a:start=1508959032921984000,finish=1508959035042081000,duration=2120097000
 [0K
 
 [32;1mThe command "brew cask list --versions" exited with 0.[0m
 
-travis_time:start:051e5ea5
+travis_time:start:0f3f6c66
 [0K$ if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi
 
 nope
 
 
 
-travis_time:end:051e5ea5:start=1508957763706372000,finish=1508957763737745000,duration=31373000
+travis_time:end:0f3f6c66:start=1508959035058939000,finish=1508959035082175000,duration=23236000
 [0K
 
 [32;1mThe command "if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi" exited with 0.[0m
 
-travis_time:start:1b981fb4
+travis_time:start:239ce884
 [0K$ rvm list
 
 
@@ -1181,7 +998,11 @@ rvm rubies
 
    [32mruby-2.3.3[0m [ x86_64 ]
 
-=* [32mruby-2.4.1[0m [ x86_64 ]
+   [32mruby-2.3.5[0m [ x86_64 ]
+
+   [32mruby-2.4.1[0m [ x86_64 ]
+
+=* [32mruby-2.4.2[0m [ x86_64 ]
 
 
 
@@ -1195,55 +1016,55 @@ rvm rubies
 
 
 
-travis_time:end:1b981fb4:start=1508957763762552000,finish=1508957764820164000,duration=1057612000
+travis_time:end:239ce884:start=1508959035097733000,finish=1508959035824022000,duration=726289000
 [0K
 
 [32;1mThe command "rvm list" exited with 0.[0m
 
-travis_time:start:02e66368
+travis_time:start:0f1ae2a3
 [0K$ python2.6 --version
 
 Python 2.6.9
 
 
 
-travis_time:end:02e66368:start=1508957764850382000,finish=1508957765074841000,duration=224459000
+travis_time:end:0f1ae2a3:start=1508959035837114000,finish=1508959035960951000,duration=123837000
 [0K
 
 [32;1mThe command "python2.6 --version" exited with 0.[0m
 
-travis_time:start:35d0a950
+travis_time:start:1c8cb3fa
 [0K$ python2.7 --version
 
-Python 2.7.13
+Python 2.7.14
 
 
 
-travis_time:end:35d0a950:start=1508957765101762000,finish=1508957765336517000,duration=234755000
+travis_time:end:1c8cb3fa:start=1508959035977812000,finish=1508959036169025000,duration=191213000
 [0K
 
 [32;1mThe command "python2.7 --version" exited with 0.[0m
 
-travis_time:start:008334d8
+travis_time:start:084541f4
 [0K$ motion --version
 
-4.18
+5.3
 
 
 
-travis_time:end:008334d8:start=1508957765372625000,finish=1508957766059981000,duration=687356000
+travis_time:end:084541f4:start=1508959036182464000,finish=1508959036669047000,duration=486583000
 [0K
 
 [32;1mThe command "motion --version" exited with 0.[0m
 
-travis_time:start:26e43427
+travis_time:start:125ce61c
 [0K$ pod --version
 
-1.2.1
+1.3.1
 
 
 
-travis_time:end:26e43427:start=1508957766085679000,finish=1508957767331995000,duration=1246316000
+travis_time:end:125ce61c:start=1508959036683287000,finish=1508959039104535000,duration=2421248000
 [0K
 
 [32;1mThe command "pod --version" exited with 0.[0m
