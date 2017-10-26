@@ -1,0 +1,1255 @@
+travis_fold:start:worker_info
+[0K[33;1mWorker information[0m
+hostname: 8b2412d1-b07d-4ab5-8f6f-3f40281bd75f@15948.wjb-1.macstadium-us-se-1.travisci.net
+version: v3.1.0 https://github.com/travis-ci/worker/tree/5b106cb773802277034d07b0a865af58d67bb1d2
+instance: 9cad0b9c-ef05-4b86-b607-ea3a5553722e:travis-ci-macos10.12-xcode8.3-1496700148 (via amqp)
+startup: 2m55.248241195s
+travis_fold:end:worker_info
+[0K/Users/travis/.nvm/nvm.sh: line 2568: echo: write error: Broken pipe
+
+travis_fold:start:system_info
+[0K[33;1mBuild system information[0m
+
+Build language: objective-c
+
+Build id: 637792
+
+Job id: 637793
+
+Runtime kernel version: 16.6.0
+
+travis-build version: a8bb91dae
+
+travis_fold:end:system_info
+[0K
+
+Fix WWDRCA Certificate
+
+Unable to delete certificate matching "0950B6CD3D2F37EA246A1AAA20DFAADBD6FE1F75"security: AppleWWDRCA.cer: already in /Library/Keychains/System.keychain
+
+$ rvm use
+
+Warning! PATH is not properly set up, '/Users/travis/.rvm/gems/ruby-2.4.1/bin' is not at first place,
+
+         usually this is caused by shell initialization files - check them for 'PATH=...' entries,
+
+         it might also help to re-add RVM to your dotfiles: 'rvm get stable --auto-dotfiles',
+
+         to fix temporarily in this shell session run: 'rvm use ruby-2.4.1'.
+
+[32mUsing /Users/travis/.rvm/gems/ruby-2.4.1[0m
+
+travis_fold:start:git.checkout
+[0Ktravis_time:start:03ceb352
+[0K$ git clone --depth=50 --branch=xcode-8.3test https://github.com/Lyoness/travis_staging_test.git Lyoness/travis_staging_test
+
+Cloning into 'Lyoness/travis_staging_test'...
+
+remote: Counting objects: 23, done.[K
+
+remote: Compressing objects:   5% (1/17)   [K
+remote: Compressing objects:  11% (2/17)   [K
+remote: Compressing objects:  17% (3/17)   [K
+remote: Compressing objects:  23% (4/17)   [K
+remote: Compressing objects:  29% (5/17)   [K
+remote: Compressing objects:  35% (6/17)   [K
+remote: Compressing objects:  41% (7/17)   [K
+remote: Compressing objects:  47% (8/17)   [K
+remote: Compressing objects:  52% (9/17)   [K
+remote: Compressing objects:  58% (10/17)   [K
+remote: Compressing objects:  64% (11/17)   [K
+remote: Compressing objects:  70% (12/17)   [K
+remote: Compressing objects:  76% (13/17)   [K
+remote: Compressing objects:  82% (14/17)   [K
+remote: Compressing objects:  88% (15/17)   [K
+remote: Compressing objects:  94% (16/17)   [K
+remote: Compressing objects: 100% (17/17)   [K
+remote: Compressing objects: 100% (17/17), done.[K
+
+remote: Total 23 (delta 6), reused 21 (delta 4), pack-reused 0[K
+
+Unpacking objects:   4% (1/23)   
+Unpacking objects:   8% (2/23)   
+Unpacking objects:  13% (3/23)   
+Unpacking objects:  17% (4/23)   
+Unpacking objects:  21% (5/23)   
+Unpacking objects:  26% (6/23)   
+Unpacking objects:  30% (7/23)   
+Unpacking objects:  34% (8/23)   
+Unpacking objects:  39% (9/23)   
+Unpacking objects:  43% (10/23)   
+Unpacking objects:  47% (11/23)   
+Unpacking objects:  52% (12/23)   
+Unpacking objects:  56% (13/23)   
+Unpacking objects:  60% (14/23)   
+Unpacking objects:  65% (15/23)   
+Unpacking objects:  69% (16/23)   
+Unpacking objects:  73% (17/23)   
+Unpacking objects:  78% (18/23)   
+Unpacking objects:  82% (19/23)   
+Unpacking objects:  86% (20/23)   
+Unpacking objects:  91% (21/23)   
+Unpacking objects:  95% (22/23)   
+Unpacking objects: 100% (23/23)   
+Unpacking objects: 100% (23/23), done.
+
+
+
+travis_time:end:03ceb352:start=1508957734361564000,finish=1508957736536061000,duration=2174497000
+[0K$ cd Lyoness/travis_staging_test
+
+$ git checkout -qf aaf2cca62c77111d18f9a01f6db07d4a6599e934
+
+travis_fold:end:git.checkout
+[0K[33;1mDisabling Homebrew auto update. If your Homebrew package requires Homebrew DB be up to date, please run `brew update` explicitly.[0m
+
+$ export HOMEBREW_NO_AUTO_UPDATE=1
+
+travis_fold:start:rvm
+[0Ktravis_time:start:046e2dd8
+[0K$ rvm use default
+
+[32mUsing /Users/travis/.rvm/gems/ruby-2.4.1[0m
+
+
+
+** Updating RubyGems to the latest version for security reasons. **
+
+** If you need an older version, you can downgrade with 'gem update --system OLD_VERSION'. **
+
+
+
+Updating rubygems-update
+
+Fetching: rubygems-update-2.6.14.gem
+Fetching: rubygems-update-2.6.14.gem (  1%)
+Fetching: rubygems-update-2.6.14.gem (  2%)
+Fetching: rubygems-update-2.6.14.gem (  3%)
+Fetching: rubygems-update-2.6.14.gem (  4%)
+Fetching: rubygems-update-2.6.14.gem (  5%)
+Fetching: rubygems-update-2.6.14.gem (  7%)
+Fetching: rubygems-update-2.6.14.gem (  9%)
+Fetching: rubygems-update-2.6.14.gem ( 11%)
+Fetching: rubygems-update-2.6.14.gem ( 13%)
+Fetching: rubygems-update-2.6.14.gem ( 15%)
+Fetching: rubygems-update-2.6.14.gem ( 18%)
+Fetching: rubygems-update-2.6.14.gem ( 20%)
+Fetching: rubygems-update-2.6.14.gem ( 22%)
+Fetching: rubygems-update-2.6.14.gem ( 24%)
+Fetching: rubygems-update-2.6.14.gem ( 26%)
+Fetching: rubygems-update-2.6.14.gem ( 28%)
+Fetching: rubygems-update-2.6.14.gem ( 30%)
+Fetching: rubygems-update-2.6.14.gem ( 33%)
+Fetching: rubygems-update-2.6.14.gem ( 35%)
+Fetching: rubygems-update-2.6.14.gem ( 37%)
+Fetching: rubygems-update-2.6.14.gem ( 39%)
+Fetching: rubygems-update-2.6.14.gem ( 41%)
+Fetching: rubygems-update-2.6.14.gem ( 43%)
+Fetching: rubygems-update-2.6.14.gem ( 45%)
+Fetching: rubygems-update-2.6.14.gem ( 48%)
+Fetching: rubygems-update-2.6.14.gem ( 50%)
+Fetching: rubygems-update-2.6.14.gem ( 52%)
+Fetching: rubygems-update-2.6.14.gem ( 54%)
+Fetching: rubygems-update-2.6.14.gem ( 56%)
+Fetching: rubygems-update-2.6.14.gem ( 58%)
+Fetching: rubygems-update-2.6.14.gem ( 60%)
+Fetching: rubygems-update-2.6.14.gem ( 63%)
+Fetching: rubygems-update-2.6.14.gem ( 65%)
+Fetching: rubygems-update-2.6.14.gem ( 67%)
+Fetching: rubygems-update-2.6.14.gem ( 69%)
+Fetching: rubygems-update-2.6.14.gem ( 71%)
+Fetching: rubygems-update-2.6.14.gem ( 73%)
+Fetching: rubygems-update-2.6.14.gem ( 75%)
+Fetching: rubygems-update-2.6.14.gem ( 78%)
+Fetching: rubygems-update-2.6.14.gem ( 80%)
+Fetching: rubygems-update-2.6.14.gem ( 82%)
+Fetching: rubygems-update-2.6.14.gem ( 84%)
+Fetching: rubygems-update-2.6.14.gem ( 86%)
+Fetching: rubygems-update-2.6.14.gem ( 88%)
+Fetching: rubygems-update-2.6.14.gem ( 90%)
+Fetching: rubygems-update-2.6.14.gem ( 93%)
+Fetching: rubygems-update-2.6.14.gem ( 95%)
+Fetching: rubygems-update-2.6.14.gem ( 97%)
+Fetching: rubygems-update-2.6.14.gem ( 99%)
+Fetching: rubygems-update-2.6.14.gem (100%)
+Fetching: rubygems-update-2.6.14.gem (100%)
+
+Successfully installed rubygems-update-2.6.14
+
+Installing RubyGems 2.6.14
+
+RubyGems 2.6.14 installed
+
+
+
+=== 2.6.14 / 2017-10-09
+
+
+
+Security fixes:
+
+
+
+* Whitelist classes and symbols that are in loaded YAML.
+
+  See CVE-2017-0903 for full details.
+
+  Fix by Aaron Patterson.
+
+
+
+=== 2.6.13 / 2017-08-27
+
+
+
+Security fixes:
+
+
+
+* Fix a DNS request hijacking vulnerability.
+
+  Fix by Samuel Giddins.
+
+* Fix an ANSI escape sequence vulnerability.
+
+  Fix by Evan Phoenix.
+
+* Fix a DOS vulernerability in the `query` command.
+
+  Fix by Samuel Giddins.
+
+* Fix a vulnerability in the gem installer that allowed
+
+  a malicious gem to overwrite arbitrary files.
+
+  Fix by Samuel Giddins.
+
+
+
+=== 2.6.12 / 2017-04-30
+
+
+
+Bug fixes:
+
+
+
+* Fix test_self_find_files_with_gemfile to sort expected files. Pull
+
+  request #1880 by Kazuaki Matsuo.
+
+* Fix issue for MinGW / MSYS2 builds and testing. Pull request #1879 by
+
+  MSP-Greg.
+
+* Fix gem open to open highest version number rather than lowest. Pull
+
+  request #1877 by Tim Pope.
+
+* Add a test for requiring a default spec as installed by the ruby
+
+  installer. Pull request #1899 by Samuel Giddins.
+
+* Fix broken --exact parameter to gem command. Pull request #1873 by Jason
+
+  Frey.
+
+* [Installer] Generate backwards-compatible binstubs. Pull request #1904
+
+  by Samuel Giddins.
+
+* Fix pre-existing source recognition on add action. Pull request #1883 by
+
+  Jonathan Claudius.
+
+* Prevent negative IDs in output of #inspect. Pull request #1908 by VÃ­t
+
+  Ondruch.
+
+* Allow Gem.finish_resolve to respect already-activated specs. Pull
+
+  request #1910 by Samuel Giddins.
+
+
+
+
+
+------------------------------------------------------------------------------
+
+
+
+RubyGems installed the following executables:
+
+	/Users/travis/.rvm/rubies/ruby-2.4.1/bin/gem
+
+
+
+RubyGems system software updated
+
+
+
+travis_time:end:046e2dd8:start=1508957736682439000,finish=1508957747452516000,duration=10770077000
+[0Ktravis_fold:end:rvm
+[0K$ ruby --version
+
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
+
+$ rvm --version
+
+rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+
+$ bundle --version
+
+Bundler version 1.15.1
+
+travis_fold:start:announce
+[0K$ xcodebuild -version -sdk
+
+iPhoneOS10.3.sdk - iOS 10.3 (iphoneos10.3)
+
+SDKVersion: 10.3
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk
+
+PlatformVersion: 10.3
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform
+
+ProductBuildVersion: 14E8301
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: iPhone OS
+
+ProductVersion: 10.3.1
+
+
+
+iPhoneSimulator10.3.sdk - Simulator - iOS 10.3 (iphonesimulator10.3)
+
+SDKVersion: 10.3
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk
+
+PlatformVersion: 10.3
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
+
+ProductBuildVersion: 14E8301
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: iPhone OS
+
+ProductVersion: 10.3.1
+
+
+
+MacOSX10.12.sdk - macOS 10.12 (macosx10.12)
+
+SDKVersion: 10.12
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
+
+PlatformVersion: 1.1
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
+
+ProductBuildVersion: 16E185
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: Mac OS X
+
+ProductUserVisibleVersion: 10.12.4
+
+ProductVersion: 10.12.4
+
+
+
+AppleTVOS10.2.sdk - tvOS 10.2 (appletvos10.2)
+
+SDKVersion: 10.2
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk
+
+PlatformVersion: 10.2
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform
+
+ProductBuildVersion: 14W260
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: Apple TVOS
+
+ProductVersion: 10.2
+
+
+
+AppleTVSimulator10.2.sdk - Simulator - tvOS 10.2 (appletvsimulator10.2)
+
+SDKVersion: 10.2
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator10.2.sdk
+
+PlatformVersion: 10.2
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVSimulator.platform
+
+ProductBuildVersion: 14W260
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: Apple TVOS
+
+ProductVersion: 10.2
+
+
+
+WatchOS3.2.sdk - watchOS 3.2 (watchos3.2)
+
+SDKVersion: 3.2
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk
+
+PlatformVersion: 3.2
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform
+
+ProductBuildVersion: 14V243
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: Watch OS
+
+ProductVersion: 3.2
+
+
+
+WatchSimulator3.2.sdk - Simulator - watchOS 3.2 (watchsimulator3.2)
+
+SDKVersion: 3.2
+
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator3.2.sdk
+
+PlatformVersion: 3.2
+
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform
+
+ProductBuildVersion: 14V243
+
+ProductCopyright: 1983-2017 Apple Inc.
+
+ProductName: Watch OS
+
+ProductVersion: 3.2
+
+
+
+Xcode 8.3.3
+
+Build version 8E3004b
+
+$ xctool -version
+
+0.3.1
+
+$ xcrun simctl list
+
+== Device Types ==
+
+iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
+
+iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
+
+iPhone 5s (com.apple.CoreSimulator.SimDeviceType.iPhone-5s)
+
+iPhone 6 (com.apple.CoreSimulator.SimDeviceType.iPhone-6)
+
+iPhone 6 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-6-Plus)
+
+iPhone 6s (com.apple.CoreSimulator.SimDeviceType.iPhone-6s)
+
+iPhone 6s Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-6s-Plus)
+
+iPhone 7 (com.apple.CoreSimulator.SimDeviceType.iPhone-7)
+
+iPhone 7 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus)
+
+iPhone SE (com.apple.CoreSimulator.SimDeviceType.iPhone-SE)
+
+iPad 2 (com.apple.CoreSimulator.SimDeviceType.iPad-2)
+
+iPad Retina (com.apple.CoreSimulator.SimDeviceType.iPad-Retina)
+
+iPad Air (com.apple.CoreSimulator.SimDeviceType.iPad-Air)
+
+iPad Air 2 (com.apple.CoreSimulator.SimDeviceType.iPad-Air-2)
+
+iPad (5th generation) (com.apple.CoreSimulator.SimDeviceType.iPad--5th-generation-)
+
+iPad Pro (9.7-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--9-7-inch-)
+
+iPad Pro (12.9-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro)
+
+iPad Pro (12.9-inch) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---2nd-generation-)
+
+iPad Pro (10.5-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--10-5-inch-)
+
+Apple TV 1080p (com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p)
+
+Apple Watch - 38mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-38mm)
+
+Apple Watch - 42mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-42mm)
+
+Apple Watch Series 2 - 38mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-2-38mm)
+
+Apple Watch Series 2 - 42mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-2-42mm)
+
+== Runtimes ==
+
+iOS 8.1 (8.1 - 12B411) (com.apple.CoreSimulator.SimRuntime.iOS-8-1)
+
+iOS 8.2 (8.2 - 12D508) (com.apple.CoreSimulator.SimRuntime.iOS-8-2)
+
+iOS 8.3 (8.3 - 12F70) (com.apple.CoreSimulator.SimRuntime.iOS-8-3)
+
+iOS 8.4 (8.4 - 12H141) (com.apple.CoreSimulator.SimRuntime.iOS-8-4)
+
+iOS 9.0 (9.0 - 13A344) (com.apple.CoreSimulator.SimRuntime.iOS-9-0)
+
+iOS 9.1 (9.1 - 13B143) (com.apple.CoreSimulator.SimRuntime.iOS-9-1)
+
+iOS 9.2 (9.2 - 13C75) (com.apple.CoreSimulator.SimRuntime.iOS-9-2)
+
+iOS 9.3 (9.3 - 13E233) (com.apple.CoreSimulator.SimRuntime.iOS-9-3)
+
+iOS 10.0 (10.0 - 14A345) (com.apple.CoreSimulator.SimRuntime.iOS-10-0)
+
+iOS 10.1 (10.1 - 14B72) (com.apple.CoreSimulator.SimRuntime.iOS-10-1)
+
+iOS 10.2 (10.2 - 14C89) (com.apple.CoreSimulator.SimRuntime.iOS-10-2)
+
+iOS 10.3 (10.3.1 - 14E8301) (com.apple.CoreSimulator.SimRuntime.iOS-10-3)
+
+tvOS 9.0 (9.0 - 13T395) (com.apple.CoreSimulator.SimRuntime.tvOS-9-0)
+
+tvOS 9.1 (9.1 - 13U85) (com.apple.CoreSimulator.SimRuntime.tvOS-9-1)
+
+tvOS 9.2 (9.2 - 13Y234) (com.apple.CoreSimulator.SimRuntime.tvOS-9-2)
+
+tvOS 10.0 (10.0 - 14T328) (com.apple.CoreSimulator.SimRuntime.tvOS-10-0)
+
+tvOS 10.1 (10.1 - 14U591) (com.apple.CoreSimulator.SimRuntime.tvOS-10-1)
+
+tvOS 10.2 (10.2 - 14W260) (com.apple.CoreSimulator.SimRuntime.tvOS-10-2)
+
+watchOS 2.0 (2.0 - 13S343) (com.apple.CoreSimulator.SimRuntime.watchOS-2-0)
+
+watchOS 2.1 (2.1 - 13S661) (com.apple.CoreSimulator.SimRuntime.watchOS-2-1)
+
+watchOS 2.2 (2.2 - 13V144) (com.apple.CoreSimulator.SimRuntime.watchOS-2-2)
+
+watchOS 3.1 (3.1 - 14S471a) (com.apple.CoreSimulator.SimRuntime.watchOS-3-1)
+
+watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
+
+== Devices ==
+
+-- iOS 8.1 --
+
+    iPhone 4s (DCAF3602-A974-48F4-B6B6-8247F7BE4290) (Shutdown)
+
+    iPhone 5 (C6895639-ADC2-4EF8-8BE1-3235EC600C6F) (Shutdown)
+
+    iPhone 5s (4A910963-385E-4A7C-810E-BCFF684B5564) (Shutdown)
+
+    iPhone 6 (80BE80F4-C243-43F0-BD95-5CB085DAD04F) (Shutdown)
+
+    iPhone 6 Plus (25920468-1144-4E9B-AC25-41C79D2DC107) (Shutdown)
+
+    iPad 2 (D8A65111-E485-4F8C-A037-09F81F14618F) (Shutdown)
+
+    iPad Retina (6C414B17-8F7E-4B7A-84CF-5C486C9252AF) (Shutdown)
+
+    iPad Air (F8F3C85E-496E-471F-8435-193A3842ACD3) (Shutdown)
+
+    iPad Air 2 (75CEA576-8113-46FC-9723-E89A2D65FD38) (Shutdown)
+
+-- iOS 8.2 --
+
+    iPhone 4s (DCDC5358-FFBF-4989-8092-7F65ED8F02AF) (Shutdown)
+
+    iPhone 5 (3519E18E-DEFE-465F-9716-9CE03EEDCFDB) (Shutdown)
+
+    iPhone 5s (47B1A2B3-6190-4915-9406-6B71257262C8) (Shutdown)
+
+    iPhone 6 (A14A9B20-991D-4837-BADE-A98DB2D7FB61) (Shutdown)
+
+    iPhone 6 Plus (25E030F7-A8FC-47D6-90CF-F49FF4D98622) (Shutdown)
+
+    iPad 2 (D2EA2E24-A1CF-460A-9390-0E28870FC28A) (Shutdown)
+
+    iPad Retina (547FDA94-BC57-4E28-911F-CBE83883220B) (Shutdown)
+
+    iPad Air (CA27D11D-AC02-4380-AEBA-EB4C28C38A64) (Shutdown)
+
+    iPad Air 2 (7B3B5E2A-5071-4472-BA40-DFE991BCFA0F) (Shutdown)
+
+-- iOS 8.3 --
+
+    iPhone 4s (2725F258-12B4-4EC0-BF92-2F6972815E5B) (Shutdown)
+
+    iPhone 5 (D8101339-3F2D-4784-AE7F-0C0C38717431) (Shutdown)
+
+    iPhone 5s (DDDC024F-D1B1-4DD4-BED0-3DDF2780232D) (Shutdown)
+
+    iPhone 6 (03CE767F-846C-484D-9891-30E38ABD5143) (Shutdown)
+
+    iPhone 6 Plus (AEB1A3D5-1B9C-4BF6-BDC9-1514DC283402) (Shutdown)
+
+    iPad 2 (8F1F79AE-0086-419A-91D4-B5D3AED3D0A5) (Shutdown)
+
+    iPad Retina (083294ED-5204-4716-B125-5BBA64E699DE) (Shutdown)
+
+    iPad Air (FE5B62B5-DAAA-4798-8197-B7C2E32F8B61) (Shutdown)
+
+    iPad Air 2 (8808ED62-F13B-422D-8C0C-565319421049) (Shutdown)
+
+-- iOS 8.4 --
+
+    iPhone 4s (781CBE8C-F7A2-4F43-B860-D5FE770AB9CC) (Shutdown)
+
+    iPhone 5 (2FDCE5B5-CE70-4DC9-AD28-342517146F0D) (Shutdown)
+
+    iPhone 5s (8588DD30-E67A-4B43-BEBC-8CCAC82F8338) (Shutdown)
+
+    iPhone 6 (407BD90E-2507-4133-A823-8E0407EE8D69) (Shutdown)
+
+    iPhone 6 Plus (0EA8243F-B321-48CE-8AD1-AFBDBCF24260) (Shutdown)
+
+    iPad 2 (15F8B4D6-FADF-4DCD-BF06-66B232D8F334) (Shutdown)
+
+    iPad Retina (7106EA7A-20EA-4DCF-ACC5-24EF605D6C2F) (Shutdown)
+
+    iPad Air (02611222-B414-423B-8B8A-FD65E57A2826) (Shutdown)
+
+    iPad Air 2 (E6F5F8EC-BD06-4887-AD55-A1802830FF39) (Shutdown)
+
+-- iOS 9.0 --
+
+    iPhone 4s (95CABF9C-189B-4EC0-AC51-2BE373A29E95) (Shutdown)
+
+    iPhone 5 (E5910ACF-1062-48D0-8928-78018B223295) (Shutdown)
+
+    iPhone 5s (B6DE063E-0F3E-43F5-8020-0BEBF00D6E4A) (Shutdown)
+
+    iPhone 6 (2BD86C3D-EFC9-4770-82B7-C5E03444AE16) (Shutdown)
+
+    iPhone 6 Plus (9AB3D590-C748-4E17-8E35-67B298E973F7) (Shutdown)
+
+    iPhone 6s (70D9F230-1F07-4C14-9ED2-FE03D88FEAC4) (Shutdown)
+
+    iPhone 6s Plus (9D345279-B4F5-42A1-8202-95444A73E610) (Shutdown)
+
+    iPad 2 (9B792A1C-B89B-43EA-8D3F-BC215DF59D19) (Shutdown)
+
+    iPad Retina (A0FD7022-B1C6-4F48-B81F-EC8BB41E3669) (Shutdown)
+
+    iPad Air (23654F4B-2EEB-4B94-8AFA-E0C38FA043DC) (Shutdown)
+
+    iPad Air 2 (36EDE922-FE12-412F-B558-E2E0F0CA3DE9) (Shutdown)
+
+-- iOS 9.1 --
+
+    iPhone 4s (F34DC048-527F-4281-858D-E2E3DC5D32DA) (Shutdown)
+
+    iPhone 5 (51682944-F136-411D-B67B-18AF8E1E2B13) (Shutdown)
+
+    iPhone 5s (14434056-BA7C-42DF-9683-6BB25D6001AB) (Shutdown)
+
+    iPhone 6 (309333F7-3DAE-403C-A688-865986C623B4) (Shutdown)
+
+    iPhone 6 Plus (A999A1E3-742E-4C02-937B-569C6FEF9B93) (Shutdown)
+
+    iPhone 6s (CE78B177-986F-44E9-86FA-634545685321) (Shutdown)
+
+    iPhone 6s Plus (2F456EE1-0567-438C-A5F2-57A8D1230CE6) (Shutdown)
+
+    iPad 2 (2FE15DA4-5EC7-49A5-B78D-F429AB6AB7F9) (Shutdown)
+
+    iPad Retina (FC3B9221-1A5E-442C-9D96-015C90752034) (Shutdown)
+
+    iPad Air (CA9E3B4B-31F3-42C6-9B81-0AFD03C14E69) (Shutdown)
+
+    iPad Air 2 (BE431EDF-3763-431D-B9B6-5F27E9C9B434) (Shutdown)
+
+    iPad Pro (12.9-inch) (6B9FA8D3-569E-42F3-83E5-D80EC064B81C) (Shutdown)
+
+-- iOS 9.2 --
+
+    iPhone 4s (75838F3E-BE3C-43E0-BC20-E725CC43435D) (Shutdown)
+
+    iPhone 5 (5A8FD652-C843-43BF-AC77-EA15B4A916D7) (Shutdown)
+
+    iPhone 5s (B5D50293-B1BA-420A-B7BA-316BAEE71461) (Shutdown)
+
+    iPhone 6 (D07AD1E1-0CC7-4472-BD6A-2932A3A74634) (Shutdown)
+
+    iPhone 6 Plus (E0697259-F09E-4630-B389-46FFEFB722AB) (Shutdown)
+
+    iPhone 6s (AC8E5E63-85C7-49CD-A967-4CE2F08F00D3) (Shutdown)
+
+    iPhone 6s Plus (68B1E269-3412-42E3-9BEE-341D4C641DD7) (Shutdown)
+
+    iPad 2 (382B796A-5862-4822-967C-63D92A972A84) (Shutdown)
+
+    iPad Retina (4E012273-3F93-446E-8E77-0460470032E4) (Shutdown)
+
+    iPad Air (A2CD03C7-05DC-407A-A117-00DDC71A8F7A) (Shutdown)
+
+    iPad Air 2 (721B5B33-6CB6-4256-9690-A9474C066EF4) (Shutdown)
+
+    iPad Pro (12.9-inch) (070DF22F-7F69-4EAA-896E-2E84DAE10B2F) (Shutdown)
+
+-- iOS 9.3 --
+
+    iPhone 4s (984A1890-994E-4381-ABDC-7A302426E9AF) (Shutdown)
+
+    iPhone 5 (D5BD44C1-F03E-439D-BB6C-E805A7FCA27B) (Shutdown)
+
+    iPhone 5s (EB62DE7F-9FD2-4C76-BF28-E31659A93174) (Shutdown)
+
+    iPhone 6 (03760B35-0E00-4F7C-87BF-7C4F59EF7248) (Shutdown)
+
+    iPhone 6 Plus (1627EF4F-03B1-4635-9270-FC3E7FE5A13A) (Shutdown)
+
+    iPhone 6s (8BB869B7-8203-4B31-99C9-CC276640EC3D) (Shutdown)
+
+    iPhone 6s Plus (43CD88FF-F754-4EA7-BB04-D879504B943B) (Shutdown)
+
+    iPhone SE (BDB7716F-DB5B-453C-BFB8-1D8B1497A931) (Shutdown)
+
+    iPad 2 (6A0D249C-296B-4C4F-B650-70DB3BBCD337) (Shutdown)
+
+    iPad Retina (16886F87-54C0-4396-BDFD-20017FA3BD58) (Shutdown)
+
+    iPad Air (DF9AD210-D565-4FF7-8C30-8117CC1A8ABA) (Shutdown)
+
+    iPad Air 2 (D83D9FC9-4AFB-41AC-A04B-755635DABF7D) (Shutdown)
+
+    iPad Pro (12.9-inch) (02A8F368-DAF1-4473-AE19-AB2B6F8ABF13) (Shutdown)
+
+-- iOS 10.0 --
+
+    iPhone 5 (3AA26DE0-C2F0-4CAF-936D-09F1ECCF9BDA) (Shutdown)
+
+    iPhone 5s (109C3283-E302-42ED-BCF4-7B46B05AD70C) (Shutdown)
+
+    iPhone 6 (8BCFD96E-24E3-44B4-AE9F-F87F0D669A3F) (Shutdown)
+
+    iPhone 6 Plus (B9814467-D104-489A-BB92-93927D044C73) (Shutdown)
+
+    iPhone 6s (9B32ADCD-2A13-4569-81A1-0279124E5831) (Shutdown)
+
+    iPhone 6s Plus (89EB216A-C657-49A0-92B6-9A6D182C5F79) (Shutdown)
+
+    iPhone 7 (15E2107D-EAD2-4E1F-8BC3-59E58E750FB1) (Shutdown)
+
+    iPhone 7 Plus (1E45DDFB-C595-4087-9EF0-4864772061B7) (Shutdown)
+
+    iPhone SE (ACC06281-1A0A-4A1C-848F-9F4FAA04D3CB) (Shutdown)
+
+    iPad Air (FFDCEC43-BE2D-46EA-98AA-5643F6882D39) (Shutdown)
+
+    iPad Air 2 (C1D9D0E2-BADE-48B8-8F38-398AEE1BE434) (Shutdown)
+
+    iPad Pro (9.7-inch) (831AB357-8223-490A-B6AA-CCF1377C063B) (Shutdown)
+
+    iPad Pro (12.9-inch) (AE225816-423F-4755-B1A3-944D0B77081B) (Shutdown)
+
+-- iOS 10.1 --
+
+    iPhone 5 (F5558AB4-0D25-451A-98E6-80A5661E3615) (Shutdown)
+
+    iPhone 5s (7254AB8A-B3F9-4213-81D0-5F6D102639F2) (Shutdown)
+
+    iPhone 6 (57843F60-3483-4859-94F5-5510A5974107) (Shutdown)
+
+    iPhone 6 Plus (FCEE34EB-BAE7-4FB5-BD10-E2B08A42B5F2) (Shutdown)
+
+    iPhone 6s (55B3CE57-115D-48A2-B11C-5A2A6377F302) (Shutdown)
+
+    iPhone 6s Plus (DD32C29E-E93B-44BC-8BD4-00F55143D3DB) (Shutdown)
+
+    iPhone 7 (060AAE67-12D1-4C9B-AD75-71A217E26F0E) (Shutdown)
+
+    iPhone 7 Plus (55235379-EF25-4E79-BD2C-2E3A03853BFB) (Shutdown)
+
+    iPhone SE (843EE95D-FF6C-483B-B6C4-50D1FC049887) (Shutdown)
+
+    iPad Air (7D24634B-067E-488D-A025-0F45B7467F73) (Shutdown)
+
+    iPad Air 2 (A3BF55FB-82C5-4F3D-B3E8-B1A4A4AB2490) (Shutdown)
+
+    iPad Pro (9.7-inch) (139166B7-67C4-4C7B-9EAE-8CCD9E5E7AE0) (Shutdown)
+
+    iPad Pro (12.9-inch) (B43EE7DB-32F3-4A14-9633-4CA9C3C054EB) (Shutdown)
+
+-- iOS 10.2 --
+
+    iPhone 5 (DEF54A5A-0DB7-4752-B2B5-836A924C1960) (Shutdown)
+
+    iPhone 5s (7622058D-CCEF-41D9-B698-FB6ACE4AD737) (Shutdown)
+
+    iPhone 6 (58E11FF8-014D-4141-A8AE-EFCE6EBBCFE0) (Shutdown)
+
+    iPhone 6 Plus (4CE9FA46-5B35-4FE8-A4BD-994E4540DC37) (Shutdown)
+
+    iPhone 6s (02F238E7-3BBF-4E54-8D8B-334EBDA944A4) (Shutdown)
+
+    iPhone 6s Plus (3D764D40-5488-4063-9152-5A4A8EAD2CB8) (Shutdown)
+
+    iPhone 7 (52EB9086-AE12-46E3-AADF-EB4B2B729E23) (Shutdown)
+
+    iPhone 7 Plus (EEFF1355-EE6A-4E73-A6D6-42F337C1B113) (Shutdown)
+
+    iPhone SE (040F19EB-FEC0-4357-B72F-3BD6A85DEF0E) (Shutdown)
+
+    iPad Air (5DEF0377-1447-4D52-B267-8BEDC0D1078A) (Shutdown)
+
+    iPad Air 2 (AC36DD93-1472-47DA-A4D3-302F2006B3E0) (Shutdown)
+
+    iPad Pro (9.7-inch) (5D06A5D6-7BEC-4EA1-8DD0-31B28B5F1354) (Shutdown)
+
+    iPad Pro (12.9-inch) (562297E5-5A28-4498-A22E-3B3B6F33E21B) (Shutdown)
+
+-- iOS 10.3 --
+
+    iPhone 5 (2523EF7F-852D-4268-A9A3-C55A4428EAE0) (Shutdown)
+
+    iPhone 5s (9C7E2899-7A4D-4277-9DBE-9E873EAFFFA5) (Shutdown)
+
+    iPhone 6 (0EB7E0E4-915F-497E-9D1C-934A10FA82E3) (Shutdown)
+
+    iPhone 6 Plus (EEE357DD-82EF-43B5-AABC-27E3B59DB403) (Shutdown)
+
+    iPhone 6s (AB104968-7058-4AE2-A95D-DBB77634C642) (Shutdown)
+
+    iPhone 6s Plus (482F5B24-39BD-44E0-A525-8AA39234DA28) (Shutdown)
+
+    iPhone 7 (ABBD7191-486B-462F-80B4-AE08C5820DA1) (Shutdown)
+
+    iPhone 7 Plus (F60B87EC-8969-41A7-90ED-D0826ECC32DB) (Shutdown)
+
+    iPhone SE (85AF1F51-F2EB-4A4D-930B-0E5761511A45) (Shutdown)
+
+    iPad Air (1927ED75-E56F-48F5-BE19-ECDD09BFDDC9) (Shutdown)
+
+    iPad Air 2 (F00561A4-57DE-4146-B45C-A116D4F4FF92) (Shutdown)
+
+    iPad (5th generation) (D56CF125-0398-405C-BCAD-7CD5C8DE9C81) (Shutdown)
+
+    iPad Pro (9.7-inch) (59DB07B1-DAD3-4BF2-8FCE-DCD219454151) (Shutdown)
+
+    iPad Pro (12.9-inch) (504A99DA-1807-4319-8B67-6DCE38E0EC9A) (Shutdown)
+
+    iPad Pro (12.9-inch) (2nd generation) (31661071-4A00-4068-9BCF-2B1109B66347) (Shutdown)
+
+    iPad Pro (10.5-inch) (3B4D63B0-1BFB-4921-B288-B213267B206B) (Shutdown)
+
+-- tvOS 9.0 --
+
+    Apple TV 1080p (5217E53F-EAD2-4998-BAB4-FDBB1CDF62F6) (Shutdown)
+
+-- tvOS 9.1 --
+
+    Apple TV 1080p (8B724370-7AD0-42E6-B9B2-E5BF716923DC) (Shutdown)
+
+-- tvOS 9.2 --
+
+    Apple TV 1080p (3E85F095-A8B2-4BEB-95F2-022284BDAB92) (Shutdown)
+
+-- tvOS 10.0 --
+
+    Apple TV 1080p (2D50792A-2DF0-4EC5-8B7E-C3941600DE73) (Shutdown)
+
+-- tvOS 10.1 --
+
+    Apple TV 1080p (DC27E5C4-6DC7-458F-81F1-2736DD500D14) (Shutdown)
+
+-- tvOS 10.2 --
+
+    Apple TV 1080p (810495B9-1EB7-43BB-96AF-0A3196C7A3B7) (Shutdown)
+
+-- watchOS 2.0 --
+
+    Apple Watch - 38mm (C00AA74E-9D82-4A93-BE45-9E10F59B8D56) (Shutdown)
+
+    Apple Watch - 42mm (1EE5195F-7FFC-42BC-8CCE-7766E84B0FF0) (Shutdown)
+
+-- watchOS 2.1 --
+
+    Apple Watch - 38mm (E6C53264-E849-43BB-A9D1-A7CB199B6660) (Shutdown)
+
+    Apple Watch - 42mm (6E97D432-9593-4FC4-A713-6C00ABBCDC45) (Shutdown)
+
+-- watchOS 2.2 --
+
+    Apple Watch - 38mm (5FADE638-A5AE-4495-879B-F1DF1A1FF392) (Shutdown)
+
+    Apple Watch - 42mm (CE823BBC-E51F-454D-A416-E3897991988A) (Shutdown)
+
+-- watchOS 3.1 --
+
+    Apple Watch - 38mm (049A6072-8938-4F24-A884-05C105F53A7F) (Shutdown)
+
+    Apple Watch - 42mm (E47F122C-D719-4B83-AB3C-0B5EBCAE0859) (Shutdown)
+
+    Apple Watch Series 2 - 38mm (09301B19-4800-45DF-803E-662A790052C5) (Shutdown)
+
+    Apple Watch Series 2 - 42mm (4D3F9D35-5686-4EA6-B388-3CCB6B1C8265) (Shutdown)
+
+-- watchOS 3.2 --
+
+    Apple Watch - 38mm (31C5B5D0-82A9-4A44-ABC6-29A7C5FA8993) (Shutdown)
+
+    Apple Watch - 42mm (7A7CFDC6-7BF8-4005-82AC-01966D4A20EA) (Shutdown)
+
+    Apple Watch Series 2 - 38mm (D68695DB-C79B-4D82-A2BE-D54453151884) (Shutdown)
+
+    Apple Watch Series 2 - 42mm (96AFA589-B3DD-475D-8B6D-053CE3FFEE2F) (Shutdown)
+
+== Device Pairs ==
+
+1D8AE0DF-364A-4866-95A3-5D4551DAD111 (active, disconnected)
+
+    Watch: Apple Watch - 38mm (31C5B5D0-82A9-4A44-ABC6-29A7C5FA8993) (Shutdown)
+
+    Phone: iPhone 6s (AB104968-7058-4AE2-A95D-DBB77634C642) (Shutdown)
+
+7C233D46-F281-4A3A-BEB9-E3EA249B70DD (active, disconnected)
+
+    Watch: Apple Watch - 42mm (7A7CFDC6-7BF8-4005-82AC-01966D4A20EA) (Shutdown)
+
+    Phone: iPhone 6s Plus (482F5B24-39BD-44E0-A525-8AA39234DA28) (Shutdown)
+
+B6D3F44C-EFD5-4631-8402-46C9C71D700E (active, disconnected)
+
+    Watch: Apple Watch Series 2 - 38mm (D68695DB-C79B-4D82-A2BE-D54453151884) (Shutdown)
+
+    Phone: iPhone 7 (ABBD7191-486B-462F-80B4-AE08C5820DA1) (Shutdown)
+
+586396A0-C265-4E9A-8643-B66BE1EFAA26 (active, disconnected)
+
+    Watch: Apple Watch Series 2 - 42mm (96AFA589-B3DD-475D-8B6D-053CE3FFEE2F) (Shutdown)
+
+    Phone: iPhone 7 Plus (F60B87EC-8969-41A7-90ED-D0826ECC32DB) (Shutdown)
+
+travis_fold:end:announce
+[0Ktravis_time:start:112084e5
+[0K$ uname -a
+
+Darwin Traviss-Mac-397.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+
+
+travis_time:end:112084e5:start=1508957755585391000,finish=1508957755633469000,duration=48078000
+[0K
+
+[32;1mThe command "uname -a" exited with 0.[0m
+
+travis_time:start:04285a94
+[0K$ df -h /
+
+Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+
+/dev/disk0s2  149Gi  107Gi   42Gi    72% 2622316 4292344963    0%   /
+
+
+
+travis_time:end:04285a94:start=1508957755663095000,finish=1508957755705927000,duration=42832000
+[0K
+
+[32;1mThe command "df -h /" exited with 0.[0m
+
+travis_time:start:0ce5f68f
+[0K$ xcodebuild -version
+
+Xcode 8.3.3
+
+Build version 8E3004b
+
+
+
+travis_time:end:0ce5f68f:start=1508957755751786000,finish=1508957756150862000,duration=399076000
+[0K
+
+[32;1mThe command "xcodebuild -version" exited with 0.[0m
+
+travis_time:start:012d2c5a
+[0K$ brew list --versions
+
+adns 1.5.1
+
+autoconf 2.69
+
+automake 1.15
+
+boost 1.64.0_1
+
+carthage 0.23.0
+
+cgal 4.9.1
+
+cmake 3.8.2
+
+coreutils 8.27
+
+dirmngr 1.1.1_3
+
+freexl 1.0.2
+
+gdal 1.11.5_2
+
+gdbm 1.13
+
+geos 3.6.1
+
+gettext 0.19.8.1
+
+giflib 5.1.4
+
+git 2.13.1
+
+gmp 6.1.2
+
+gnupg 2.1.21
+
+gnutls 3.5.12_2
+
+go 1.8.3
+
+gpg-agent 2.0.30_3
+
+icu4c 58.2
+
+jpeg 8d
+
+json-c 0.12
+
+libassuan 2.4.3_1
+
+libevent 2.1.8
+
+libffi 3.2.1
+
+libgcrypt 1.7.7
+
+libgeotiff 1.4.2
+
+libgpg-error 1.27
+
+libksba 1.3.5
+
+liblwgeom 2.1.5_3
+
+libpng 1.6.29
+
+libspatialite 4.3.0a_3
+
+libssh 0.7.5
+
+libtasn1 4.12
+
+libtiff 4.0.8
+
+libtool 2.4.6_1
+
+libunistring 0.9.7
+
+libusb 1.0.21
+
+libusb-compat 0.1.5_1
+
+libxml2 2.9.4_3
+
+libyaml 0.1.7
+
+lzlib 1.8
+
+maven 3.5.0
+
+md5deep 4.4
+
+mercurial 4.2.1
+
+mpfr 3.1.5
+
+msgpack 2.1.1
+
+nettle 3.3
+
+node 8.0.0_1
+
+npth 1.5
+
+openssl 1.0.2l
+
+openssl@1.1 1.1.0f
+
+p11-kit 0.23.7
+
+pcre 8.40
+
+pinentry 1.0.0
+
+pkg-config 0.29.2
+
+postgis 2.3.2
+
+postgresql 9.6.3
+
+proj 4.9.3
+
+pth 2.0.7
+
+pyenv 1.0.10_1
+
+python 2.7.13
+
+readline 7.0.3_1
+
+sfcgal 1.3.1
+
+sqlite 3.19.2
+
+swiftlint 0.19.0
+
+tmate 2.2.1_3
+
+wget 1.19.1_1
+
+xctool 0.3.1
+
+
+
+travis_time:end:012d2c5a:start=1508957756184382000,finish=1508957761525980000,duration=5341598000
+[0K
+
+[32;1mThe command "brew list --versions" exited with 0.[0m
+
+travis_time:start:17971bc2
+[0K$ brew cask list --versions
+
+java 1.8.0_112-b16
+
+oclint 0.11,15.6.0
+
+rubymotion latest
+
+xquartz 2.7.11
+
+
+
+travis_time:end:17971bc2:start=1508957761551619000,finish=1508957763681700000,duration=2130081000
+[0K
+
+[32;1mThe command "brew cask list --versions" exited with 0.[0m
+
+travis_time:start:051e5ea5
+[0K$ if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi
+
+nope
+
+
+
+travis_time:end:051e5ea5:start=1508957763706372000,finish=1508957763737745000,duration=31373000
+[0K
+
+[32;1mThe command "if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi" exited with 0.[0m
+
+travis_time:start:1b981fb4
+[0K$ rvm list
+
+
+
+rvm rubies
+
+
+
+   [32mruby-2.3.3[0m [ x86_64 ]
+
+=* [32mruby-2.4.1[0m [ x86_64 ]
+
+
+
+# => - current
+
+# =* - current && default
+
+#  * - default
+
+
+
+
+
+travis_time:end:1b981fb4:start=1508957763762552000,finish=1508957764820164000,duration=1057612000
+[0K
+
+[32;1mThe command "rvm list" exited with 0.[0m
+
+travis_time:start:02e66368
+[0K$ python2.6 --version
+
+Python 2.6.9
+
+
+
+travis_time:end:02e66368:start=1508957764850382000,finish=1508957765074841000,duration=224459000
+[0K
+
+[32;1mThe command "python2.6 --version" exited with 0.[0m
+
+travis_time:start:35d0a950
+[0K$ python2.7 --version
+
+Python 2.7.13
+
+
+
+travis_time:end:35d0a950:start=1508957765101762000,finish=1508957765336517000,duration=234755000
+[0K
+
+[32;1mThe command "python2.7 --version" exited with 0.[0m
+
+travis_time:start:008334d8
+[0K$ motion --version
+
+4.18
+
+
+
+travis_time:end:008334d8:start=1508957765372625000,finish=1508957766059981000,duration=687356000
+[0K
+
+[32;1mThe command "motion --version" exited with 0.[0m
+
+travis_time:start:26e43427
+[0K$ pod --version
+
+1.2.1
+
+
+
+travis_time:end:26e43427:start=1508957766085679000,finish=1508957767331995000,duration=1246316000
+[0K
+
+[32;1mThe command "pod --version" exited with 0.[0m
+
+
+
+Done. Your build exited with 0.
+
+/Users/travis/.travis/job_stages: line 166: shell_session_update: command not found
