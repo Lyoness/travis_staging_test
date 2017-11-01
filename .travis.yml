@@ -5,6 +5,7 @@ script:
   - xcodebuild -version
   - system_profiler SPHardwareDataType
   - ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no localhost
+  - swift -version
 
 matrix:
   include:
