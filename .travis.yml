@@ -14,3 +14,4 @@ script:
   - python2.7 --version
   - motion --version
   - pod --version
+  - swift -version
