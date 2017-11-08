@@ -14,4 +14,4 @@ script:
   - swift -version
   - xrun simctl list
   - xrun simctl list pairs
-  - echo "xcode9.1b4"
+  - echo "xcode9.1b5"
