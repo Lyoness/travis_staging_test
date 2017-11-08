@@ -12,6 +12,6 @@ script:
   - motion --version
   - pod --version
   - swift -version
-  - xrun simctl list
-  - xrun simctl list pairs
+  - xcrun simctl list
+  - xcrun simctl list pairs
   - echo "xcode9.1b7"
