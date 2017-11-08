@@ -1,9 +1,6 @@
 language: objective-c
 
-matrix:
-  include:
-  - os: osx
-  - osx_image: xcode9.1
+osx_image: xcode9.1
 
 script:
   - uname -a
@@ -17,4 +14,4 @@ script:
   - swift -version
   - xrun simctl list
   - xrun simctl list pairs
-  - echo "xcode9.1b1"
+  - echo "xcode9.1b2"
