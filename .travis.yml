@@ -4,8 +4,8 @@ script:
   - uname -a
   - xcodebuild -version
   - system_profiler SPHardwareDataType
-  - ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no localhost
   - swift -version
+  - sw_vers
 
 matrix:
   include:
