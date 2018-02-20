@@ -2,18 +2,7 @@ language: objective-c
 script:
   - df -h /
   - uname -a
-  - xcodebuild -version
-  - system_profiler SPHardwareDataType
-  - swift -version
-  - sw_vers
-  - xcodebuild -version
-  - xcrun simctl list
-  - xcrun simctl list pairs
-  - brew list --versions
-  - brew cask list --versions
-  - rvm list
-  - motion --version
-  - pod --version
+  - rvm use 2.5.0 --install --binary --fuzzy
 
 matrix:
   include:
@@ -21,3 +10,7 @@ matrix:
     osx_image: xcode9.2
   - os: osx
     osx_image: xcode9.3beta
+  - os: osx
+    osx_image: xcode9.3-lite
+  - os: osx
+    osx_image: xcode9.3-moar
