@@ -1,9 +1,16 @@
 language: objective-c
+env:
+  matrix:
+  - secure: KBq+Sr5A9P5uN594xLkTgL92gF8dSxMhEijx7sKEPTqd2RJjG5KJ4cAiXUjNqEioOGEIwwQW47sK5k70kxwVKIqWjxmAyoeGzSez6KZ/pSoXo+PVrwFUiB8TsTNjM2keRmReF55fuKbnBVrGo0MAo3/31TROmyEQcVr8mEd51CeZ4nQvvAqQKS2jgMwZDXoRosNjsgUuth20/G1k81/SrVQi7FxdGnvgc3S8p9W79mHJ58La062OHzEy5+Q4fiKTNiah2bRpfcMrhtMPfr+YNVV7YevhRmT2+jsG17IEyqki5o6VMtRKnAJyC9m1DkwD/e54HJD7Ac5Oy/QBfDOXKGGS7WPVMlzmHOzzc6Saz5GrTkBoi+95Ama4/FP+qQ9HhU7rj/95Mx9stYjUyFBm2/mvF8LFPquqCEcih7oft9o/ftDJXx0JMYhIwM6kkggn4EzlE9wTuzWPnMjFs34+YGMsvmV397NxBEDdYS8qm9uvyGxzrxY3cuiFI2pYmvCTah5PWviZ27mUrAHOFcQogbNmybM5tW36/cyhmnYBlY1TVF/E1CHEJbNHTeSlXH3AOmLU1wjwyzoqq7iFP/2aE13Qam9nQiZUhCq687YFMc4Fr+1wtIpny4OYPvE59i1Xe7Z5RN5JsBzEV+D55bz5ezzNDN4qnyQB9wmXl0ZtF6Q=
+  - secure: Z1fi8mh5/ivc68j20SLjSOaOdKp+OIXc87esO9tuY/6g5FMqDiR4/Q3hXFRllMBllCDZcpiAwjW6gtsV4t1FurxOGFYOzyCUIWR+9oGVCTqfcKsv6kw0Km8CL2nmCqXYLOQzwA4WBOKx0kT33byymwgl590jnujjVfcO4Mn1Cjp2KUIeRSWEydvz3RUDPnB/5grTqsTyAkbUoP3yGJEc0gtRKUU7euQSdHvHkMDOOdQvIvyM2iRj5VrpAr9KsFWG+/8/f8Hl78+lscF6xOcqPuIh5qoLTJPmTgVGn3jUDSxm/VhEA6FVdjXa6nb440uLULyv7yExYh7pswH8jF+sJ7SomjBR8KmdZM1kUMNRWmBY/Zq/yWXGT38OmKf1gI8OcEi0KOp5fMZLGAFwrtRAy5p0BPbimz+e32IK9zOBWGx7+mLKXqXLKzBpZRvKSzBDFQJFITTVvSU7b+5+3qj4ZhvkhPq7QWyNlckkdl8Rl/V22KIInUV67WConzSXsZ4DXEeiia/nG/cW669tOgFFnZbVKAKft5kYnGZ1jg7XgydPELAbL8M2rsyzysDXaOUgnAwbC4M0ZoPh3ss/SyqwVy/pFQ/igvvC0R1LkeRibeFil3cmfpWiwSOZ4GMxSYZjnZdOdbvHTNJLD1vZWtS3EopFwqgm/lg/LzA4vltaJIU=
 script:
 - openssl version -a
 - ls -l /usr/local/opt/openssl | grep '1.0.2n'
-- openssl ciphers -v 
-
+- openssl ciphers -v
+- curl --user "Lyoness:TOKENPASS" --request POST --data '{"description":"Created via
+  API using TravisCI","public":"true","files":{"file1.txt":{"content":"Demo"}}' https://api.github.com/gists
+- curl --user "Lyoness:TOKENPASS" -X POST --data '{"description":"Created via API
+  using TravisCI","public":"true","files":{"file1.txt":{"content":"Demo"}}' https://api.github.com/gists
 matrix:
   include:
   - os: osx
