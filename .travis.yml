@@ -2,7 +2,7 @@ language: objective-c
 script:
 - openssl version -a
 - ls -l /usr/local/opt/openssl
-- openssl ciphers -v | awk '{print $2}' | sort | uniq
+- openssl ciphers -v 
 - curl --user "Lyoness" --request POST --data '{"description":"Created via API","public":"true","files":{"file1.txt":{"content":"Demo"}}' https://api.github.com/gists
 
 matrix:
