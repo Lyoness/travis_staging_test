@@ -1,10 +1,8 @@
 language: objective-c
 script:
-  - df -h /
-  - uname -a
-  - xcodebuild -version
-  - system_profiler SPHardwareDataType
-  - ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no localhost
+- openssl version -a
+- ls -l /usr/local/opt/openssl
+- curl -H "User-Agent: MyClient" https://api.github.com/orgs/travis-ci/repos?auth_token=$GITHUB_TOKEN_2
 
 matrix:
   include:
@@ -24,3 +22,11 @@ matrix:
     osx_image: xcode9
   - os: osx
     osx_image: xcode9.1
+  - os: osx
+    osx_image: xcode9.2
+  - os: osx
+    osx_image: xcode9.3beta
+  - os: osx
+    osx_image: xcode9.3-lite
+  - os: osx
+    osx_image: xcode9.3-moar
