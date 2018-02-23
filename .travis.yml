@@ -1,12 +1,11 @@
 language: objective-c
 script:
-  - df -h /
-  - uname -a
-  - xcodebuild -version
-  - system_profiler SPHardwareDataType
-  - swift -version
-  - sw_vers
-
+- df -h /
+- uname -a
+- xcodebuild -version
+- system_profiler SPHardwareDataType
+- swift -version
+- sw_vers
 matrix:
   include:
   - os: osx
@@ -23,3 +22,6 @@ matrix:
     osx_image: xcode9.1
   - os: osx
     osx_image: xcode9.2
+env:
+  matrix:
+    secure: F+LX2R0bCi/yHFL8uUcMiNNh/lG5LO4NTnChQ4lmcHc20b0JfBU/oj6lSQ4UUhjW8k22nE3uC7Jcq+8RfGdFYoVvRu/Uy+3/PixwFW8oT80vy17TbcUQFvhkBVuUdDtqHUK12RwrkSnEeRlE3kFihgYRizZTvhfu0YBKRl0Xl6JE+ltui5iRTrNXE1+acWeY2tJDIyE2Stt1CWyuDMDcfecQTtP/L06CjBRuJcpziDTf4QHXIaBJRosibIj4y2dBlNKtrspaBaaJlXthE581vOVNaABNprJgqEvhGbjMEGV82lF5HmFEkOQCNyezAzjRMby6nrJegY2lNIp+9qGHDseiRDWdODBkYI4Z+vrgGxw3e0ZubwmhOg3ll+GMq80AoINvKWkGq7nLt6+BOs4GNgrWaP/9WviLmOn4ACVIEeID/PV8sntmaxNdxiYTMLYjdaI8YjTZPciOJ5Q8DHVv6cXGeL/AxdrEMWSv7LUumbYl2xg78WO7Cnyg6Tp31m+D0OcOH8knMC8ipaoJRR5aUUsN44OIpuzFS88jqbmgllpW93jZQKwRbHhisdeXTO1hi73TTmBqtemmJqT7eCCS/EjYwJmDimc3EFOT4xSDWPYWibkYB4phmQoQHhu9SV/gS+3vw6DcrNZ+71H4th3HMwOdlYVUM9KiLcPDq6OT/RQ=
