@@ -1,6 +1,6 @@
 language: objective-c
 
-
+script:
 - which ccache
 - ccache -version
 
