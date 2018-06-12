@@ -7,9 +7,7 @@ matrix:
   - os: osx
     osx_image: xcode9.4-beta
 
-before_script:
-  - travis_wait 40
-   
+
 script:
   - uname -a
   - df -h /
@@ -23,3 +21,4 @@ script:
   - xcrun simctl list
   - xcrun simctl list pairs
   - echo "xcode9.1b8"
+  - sleep 3600
