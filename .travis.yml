@@ -14,7 +14,6 @@ script:
   - rvm list
   - nvm list
   - sysctl -n hw.ncpu
-  - motion --version
   - pod --version
 
 matrix:
